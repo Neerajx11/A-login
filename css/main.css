@@ -108,7 +108,7 @@ li {
 }
 
 .hero {
-  background-image: url(/img/student-bg.jpg);
+  background-image: url(../img/student-bg.jpg);
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
   background-size: cover;
 }
