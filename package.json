@@ -1,0 +1,14 @@
+{
+  "name": "mmil_login",
+  "version": "1.0.0",
+  "description": "login page for teacher and student",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "MMIL",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
