@@ -4,65 +4,50 @@
   font-size: 3rem;
   color: #fff;
   letter-spacing: 3px;
-  font-family: "Poiret One", cursive;
-}
-@media only screen and (max-width: 37.25em) {
-  .heading-primary {
-    font-size: 2rem;
-  }
-}
+  font-family: "Poiret One", cursive; }
+  @media only screen and (max-width: 37.25em) {
+    .heading-primary {
+      font-size: 2rem; } }
 
 .heading-first {
   font-size: 6rem;
-  font-family: "Allura", cursive;
-}
+  font-family: 'Allura', cursive; }
 
 .link {
   color: #fff;
   font-size: 1.2rem;
-  text-decoration: none;
-}
-.link:hover {
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
-*,
-*:link,
-*:visited {
+*, *:link, *:visited {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   box-sizing: inherit;
   background-color: #141414;
-  font-family: "Poiret One", cursive;
+  font-family: 'Poiret One', cursive;
   letter-spacing: 3px;
-  font-weight: 500;
-}
+  font-weight: 500; }
 
-a {
-  text-decoration: none;
-}
+a:link, a:visited {
+  text-decoration: none; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 ::-moz-selection {
   color: #ffffff;
-  background: black;
-}
+  background: black; }
 
 ::selection {
   color: #ffffff;
-  background: black;
-}
+  background: black; }
 
 .help {
   box-shadow: 0 3px 1rem #000000;
@@ -76,17 +61,14 @@ li {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 1px 3rem #000000de;
-  transition: all 0.2s;
-}
-.help-icon {
-  color: #fff;
-  font-size: 2.5rem;
-}
-.help:hover {
-  transform: scale(1.15);
-  background-image: linear-gradient(#ec3f00, #ff4400);
-  box-shadow: 0 3px 1rem #000000ce;
-}
+  transition: all .2s; }
+  .help-icon {
+    color: #fff;
+    font-size: 2.5rem; }
+  .help:hover {
+    transform: scale(1.15);
+    background-image: linear-gradient(#ec3f00, #ff4400);
+    box-shadow: 0 3px 1rem #000000ce; }
 
 .base {
   width: 80vw;
@@ -98,143 +80,182 @@ li {
   background-color: #ffffff0e;
   box-shadow: 0 3px 1rem #000000;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-}
+  grid-template-columns: 2fr 3fr; }
 
-.base,
-.hero {
+.base, .hero {
   max-height: 45rem;
-  min-height: 45rem;
-}
+  min-height: 45rem; }
 
 .hero {
   background-image: url(../img/student-bg.jpg);
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-  background-size: cover;
-}
+  background-size: cover; }
 
 @media only screen and (max-width: 56.25em) {
   .hero {
-    display: none;
-  }
+    display: none; }
   .base {
     width: 90vw;
     grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
+    justify-items: center; } }
 
 .body {
   font-size: 1.8rem;
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 4rem 0;
   color: #fff;
-  width: max-content;
-}
-.body-email > *,
-.body-password > * {
-  margin: 1rem 0;
-}
-.body-login {
-  display: flex;
-  justify-content: center;
-}
-.body-login-teacher {
-  z-index: 2;
-}
+  width: max-content; }
+  .body-email > *, .body-password > * {
+    margin: 1rem 0; }
+  .body-login {
+    display: flex;
+    justify-content: center; }
+    .body-login-teacher {
+      z-index: 2; }
 
 @media only screen and (max-width: 56.25em) {
   .body {
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
 
 input {
   background-color: #424242;
-  font-family: "Poiret One", cursive;
+  font-family: 'Poiret One', cursive;
   color: #fff;
   border: none;
   height: 3.5rem;
   width: 35vw;
   padding: 3px 6px;
-  border-radius: 0.8rem;
-  letter-spacing: 2px;
-}
-@media only screen and (max-width: 56.25em) {
-  input {
-    width: 25rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  input {
-    width: 20rem;
-  }
-}
-input::placeholder {
-  color: #fff;
-  letter-spacing: 2px;
-}
-@media only screen and (max-width: 40em) {
+  border-radius: .8rem;
+  letter-spacing: 2px; }
+  @media only screen and (max-width: 56.25em) {
+    input {
+      width: 25rem; } }
+  @media only screen and (max-width: 25em) {
+    input {
+      width: 20rem; } }
   input::placeholder {
-    letter-spacing: 2px;
-  }
-}
-input:focus {
-  outline: none;
-  background-color: #5f5f5f;
-  letter-spacing: 2px;
-}
-input[type="password"] {
-  padding: 3px 3.5rem 3px 6px;
-}
-input[type="submit"] {
-  color: #fff;
-  width: 15rem;
-  margin: 2rem auto;
-  background-color: #ec3f00;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-input[type="submit"]:hover {
-  background-color: #ff5214;
-}
+    color: #fff;
+    letter-spacing: 2px; }
+    @media only screen and (max-width: 40em) {
+      input::placeholder {
+        letter-spacing: 2px; } }
+  input:focus {
+    outline: none;
+    background-color: #5f5f5f;
+    letter-spacing: 2px; }
+  input[type='password'] {
+    padding: 3px 3.5rem 3px 6px; }
+  input[type='submit'] {
+    color: #fff;
+    width: 15rem;
+    margin: 2rem auto;
+    background-color: #ec3f00;
+    cursor: pointer;
+    transition: background-color .2s; }
+    input[type='submit']:hover {
+      background-color: #ff5214; }
 
 .foot {
   font-size: 2rem;
   color: #fff;
-  padding: 1.2rem 4rem;
-  width: 100%;
-}
-@media only screen and (max-width: 56.25em) {
-  .foot {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
-.foot-var {
-  color: #ec3f00;
-  border-bottom: 1px solid #ec3f00;
-  cursor: pointer;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-.foot-var:hover {
-  color: #ff632a;
-}
+  padding: .8rem 4rem;
+  width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .foot {
+      font-size: 1.5rem;
+      text-align: center; } }
+  .foot-var, .foot .foot-signUp {
+    color: #ec3f00;
+    border-bottom: 1px solid #ec3f00;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color .2s; }
+    .foot-var:hover, .foot .foot-signUp:hover {
+      color: #ff632a; }
 
 .login-teacher {
-  display: none;
-}
+  display: none; }
 
-.shift-teacher,
-.shift-student {
+.shift-teacher, .shift-student {
   transform: translateX(-3.2rem);
   font-size: 1.4rem;
   max-height: 1.8rem;
-  cursor: pointer;
-}
-@media only screen and (max-width: 56.25em) {
-  .shift-teacher,
-  .shift-student {
-    transform: translateX(-2.7rem);
-  }
-}
+  cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .shift-teacher, .shift-student {
+      transform: translateX(-2.7rem); } }
+
+.signUp-base {
+  width: 80vw;
+  border-radius: 4px;
+  margin: 2rem auto;
+  padding: 2rem;
+  padding-top: 1rem;
+  background-color: #ffffff0e;
+  box-shadow: 0 3px 1rem #000000; }
+  @media only screen and (max-width: 46em) {
+    .signUp-base {
+      width: 90vw; } }
+
+.signUp-group {
+  font-size: 1.6rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+  padding: 1rem 2rem; }
+  @media only screen and (max-width: 46em) {
+    .signUp-group {
+      flex-direction: column;
+      padding: 0rem 0.5rem; }
+      .signUp-group input {
+        width: 100%;
+        margin: 0.5rem 0 3rem; }
+      .signUp-group__firstName {
+        margin-top: 2rem; }
+      .signUp-group__pass input {
+        margin-bottom: 0; }
+      .signUp-group__teacher, .signUp-group__student {
+        height: 4rem; } }
+  .signUp-group input {
+    margin-top: 1rem; }
+  .signUp-group select,
+  .signUp-group option {
+    background-color: #424242;
+    font-family: "Poiret One", cursive;
+    color: #fff;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer; }
+    .signUp-group select:focus,
+    .signUp-group option:focus {
+      outline: none; }
+  .signUp-group__student label, .signUp-group__student input, .signUp-group__teacher label, .signUp-group__teacher input {
+    cursor: pointer; }
+  .signUp-group__year {
+    margin-right: 7rem; }
+
+@media only screen and (max-width: 46em) {
+  .fix-yb {
+    flex-direction: row;
+    margin-top: 3rem; } }
+
+.sat {
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+  @media only screen and (max-width: 46em) {
+    .sat {
+      margin: 1rem 0; } }
+  .sat input[type="radio"] {
+    width: 1.5rem;
+    transform: translateY(9px); }
+
+.shift-signUp {
+  position: absolute;
+  transform: translate(-30px, 20px);
+  cursor: pointer; }
+
+.account-title {
+  margin-top: 2rem; }

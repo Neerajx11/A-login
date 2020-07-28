@@ -19,7 +19,7 @@
 }
 
 .hero{
-    background-image: url(/img/student-bg.jpg);
+    background-image: url(../img/student-bg.jpg);
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
     background-size: cover;
 }
@@ -37,7 +37,7 @@
 
 .body{
     font-size: 1.8rem;
-    padding: 1.2rem 4rem;
+    padding: 1.2rem 4rem 0;
     color: #fff;
     width: max-content;
 
@@ -123,7 +123,7 @@ input{
 .foot{
     font-size: 2rem;
     color: #fff;
-    padding: 1.2rem 4rem;
+    padding: .8rem 4rem;
     width: 100%;
 
     @media only screen and (max-width:56.25em){
@@ -132,7 +132,7 @@ input{
             text-align: center;
         }
     }
-    &-var{
+    &-var, .foot-signUp{
         color: #ec3f00;
         border-bottom: 1px solid #ec3f00;
         cursor: pointer;
@@ -162,4 +162,3 @@ input{
         }
     }
 }
-

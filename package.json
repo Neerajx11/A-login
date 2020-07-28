@@ -4,7 +4,7 @@
   "description": "login page for teacher and student",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
   },
   "author": "MMIL",
   "license": "ISC",

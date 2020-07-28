@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <div class="signUp-base">
+        <div class="heading">
+            <li class="heading-primary"><span class="heading-first">S</span>ign <span class="heading-first">U</span>p
+            </li>
+        </div>
+
+        <div class="signUp">
+            <form action="">
+                <div class="signUp-group">
+                    <div class="signUp-group__firstName">
+                        <label for="sp-firstName">First Name:</label>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="signUp-group__lastName">
+                        <label for="sp-lastName">Last Name:</label>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="signUp-group">
+                    <div class="signUp-group__email">
+                        <label for="sp-email">E-mail: &nbsp;</label>
+                        <input type="emailword" placeholder="Enter your email" required>
+                    </div>
+                    <div class="signUp-group__pass">
+                        <label for="sp-pass">Password:</label>
+                        <input type="password" minlength="8" placeholder="Enter your password" id="sp_pass" required>
+                        <i class="fas fa-eye shift-signUp"></i>
+                    </div>
+                </div>
+                <div class="signUp-group sat">
+                    <li class="account-title">Choose your account type:</li>
+                    <div class="">
+                        <div class="signUp-group__teacher">
+                            <label for="sp-teacher" value="teacher">Teacher</label>
+                            <input id="sp-teacher" class="op-hide" name="account-type" type="radio" required>
+                        </div>
+                        <div class="signUp-group__student">
+                            <label for="sp-student" value="student">Student</label>
+                            <!-- don't change input id op-show -->
+                            <input id="sp-student" class="op-show" name="account-type" type="radio" required>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="signUp-group fix-yb" id="ifStudent">
+            <div class="signUp-group__year">
+                <label for="sp-year">Year:</label>
+                <select class="uSec" name="" id="sp-year">
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                </select>
+            </div>
+            <div class="signUp-group__branch">
+                <label for="sp-branch">Branch:</label>
+                <select class="uSec" name="" id="sp-branch">
+                    <option value="">CSE</option>
+                    <option value="">IT</option>
+                    <option value="">ECE</option>
+                    <option value="">EE</option>
+                    <option value="">ME</option>
+                    <option value="">Civil</option>
+                </select>
+            </div>
+        </div>
+        <div class="body-login">
+            <input type="submit" value="Register">
+        </div>
+        </form>
+        <div class="foot">
+            <li foot>Already have an account <a href="../index.html" class="foot-signUp">login</a>.</li>
+        </div>
+    </div>
+    </div>
+
+    <!-- HELP SECTION -->
+    <a href="#">
+        <div class="help">
+            <i class="fas fa-question help-icon"></i>
+        </div>
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="signUp.js"></script>
+</body>
+
+</html>

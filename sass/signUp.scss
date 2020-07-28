@@ -1,0 +1,107 @@
+.signUp-base {
+  width: 80vw;
+  border-radius: 4px;
+  margin: 2rem auto;
+  padding: 2rem;
+  padding-top: 1rem;
+  background-color: #ffffff0e;
+  box-shadow: 0 3px 1rem #000000;
+
+  @media only screen and (max-width: 46em) {
+    width: 90vw;
+  }
+}
+.signUp-group {
+  font-size: 1.6rem;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+
+  padding: 1rem 2rem;
+
+  @media only screen and (max-width: 46em) {
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+
+    input {
+      width: 100%;
+      margin: 0.5rem 0 3rem;
+    }
+
+    &__firstName{
+      margin-top: 2rem;
+    }
+
+    &__pass input{
+      margin-bottom: 0;
+    }
+
+    &__teacher,
+    &__student {
+      height: 4rem;
+    }
+  }
+
+  input {
+    margin-top: 1rem;
+  }
+
+  select,
+  option {
+    background-color: rgb(66, 66, 66);
+    font-family: "Poiret One", cursive;
+    color: #fff;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 0.8rem;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__student, &__teacher{
+
+    label, input{
+      cursor: pointer;
+    }
+  }
+  &__year {
+    margin-right: 7rem;
+  }
+}
+
+@media only screen and (max-width: 46em) {
+  .fix-yb {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+}
+.sat {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+
+  @media only screen and (max-width: 46em) {
+    margin: 1rem 0;
+  }
+
+  & input[type="radio"] {
+    width: 1.5rem;
+    transform: translateY(9px);
+  }
+}
+
+.shift-signUp {
+  position: absolute;
+  transform: translate(-30px, 20px);
+  cursor: pointer;
+}
+.account-title {
+  margin-top: 2rem;
+}
