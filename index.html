@@ -1,112 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- Font Awsome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poiret+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Login</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HERO SECTION -->
     <div class="base">
-        <div class="hero">
-            &nbsp;
+      <div class="hero">&nbsp;</div>
+
+      <!-- LOGIN  -->
+      <div class="login">
+        <div class="login-student">
+          <!-- student heading -->
+          <div class="heading">
+            <li class="heading-primary">
+              <span class="heading-first">S</span>tudent
+              <span class="heading-first">L</span>ogin
+            </li>
+          </div>
+
+          <!-- student body -->
+          <div class="body">
+            <form action="#">
+              <div class="body-email">
+                <label for="s_email">Email:</label> <br />
+                <input
+                  type="email"
+                  name="student-email"
+                  id="s_email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="body-password">
+                <label for="s_password">Password:</label> <br />
+                <input
+                  type="password"
+                  name="student-password"
+                  id="s_pass"
+                  placeholder="Enter your password"
+                  minlength="8"
+                  required
+                /><i class="fas fa-eye shift-student"></i>
+                <!-- <i class="fas fa-eye-slash"></i> -->
+              </div>
+              <div class="body-forgot">
+                <a href="#" target="blank" class="body-forgot__pass link"
+                  >Forgot Password ?</a
+                >
+              </div>
+              <div class="body-login">
+                <input type="submit" value="Log In" />
+              </div>
+            </form>
+          </div>
         </div>
 
-        <!-- LOGIN  -->
-        <div class="login">
+        <!-- teacher login -->
+        <div class="login-teacher">
+          <!-- teacher heading -->
+          <div class="heading">
+            <li class="heading-primary">
+              <span class="heading-first">T</span>eacher
+              <span class="heading-first">L</span>ogin
+            </li>
+          </div>
 
-            <div class="login-student">
-
-                <!-- student heading -->
-                <div class="heading">
-                    <li class="heading-primary"><span class="heading-first">S</span>tudent <span
-                            class="heading-first">L</span>ogin</li>
-                </div>
-
-                <!-- student body -->
-                <div class="body">
-                    <form action="#">
-                        <div class="body-email">
-                            <label for="s_email">Email:</label> <br>
-                            <input type="email" name="student-email" id="s_email" placeholder="Enter your email"
-                                required>
-                        </div>
-                        <div class="body-password">
-                            <label for="s_password">Password:</label> <br>
-                            <input type="password" name="student-password" id="s_pass" placeholder="Enter your password"
-                                minlength="8" required><i class="fas fa-eye shift-student"></i>
-                            <!-- <i class="fas fa-eye-slash"></i> -->
-                        </div>
-                        <div class="body-forgot">
-                            <a href="#" target="blank" class="body-forgot__pass link">Forgot Password ?</a>
-                        </div>
-                        <div class="body-login">
-                            <input type="submit" value="Log In">
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- teacher login -->
-            <div class="login-teacher">
-
-                <!-- teacher heading -->
-                <div class="heading">
-                    <li class="heading-primary"><span class="heading-first">T</span>eacher <span
-                            class="heading-first">L</span>ogin</li>
-                </div>
-
-                <!-- teacher body -->
-                <div class="body">
-                    <form action="#">
-                        <div class="body-email">
-                            <label for="t_email">Email:</label> <br>
-                            <input type="email" name="teacher-email" id="t_email" placeholder="Enter your email"
-                                required>
-                        </div>
-                        <div class="body-password">
-                            <label for="t_password">Password:</label> <br>
-                            <input type="password" name="teacher-password" id="t_pass" placeholder="Enter your password"
-                                minlength="8" required><i class="fas fa-eye shift-teacher"></i>
-                        </div>
-                        <div class="body-forgot">
-                            <a href="#" target="blank" class="body-forgot__pass link">Forgot Password ?</a>
-                        </div>
-                        <div class="body-login">
-                            <input type="submit" value="Log In">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- Swap Login :{ -->
-            <div class="foot">
-                <li foot>Switch to <span class="foot-var">teacher's</span> account or <a href="signUp/index.html" class="foot-signUp">sign up</a>.</li> 
-            </div>
-
+          <!-- teacher body -->
+          <div class="body">
+            <form action="#">
+              <div class="body-email">
+                <label for="t_email">Email:</label> <br />
+                <input
+                  type="email"
+                  name="teacher-email"
+                  id="t_email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="body-password">
+                <label for="t_password">Password:</label> <br />
+                <input
+                  type="password"
+                  name="teacher-password"
+                  id="t_pass"
+                  placeholder="Enter your password"
+                  minlength="8"
+                  required
+                /><i class="fas fa-eye shift-teacher"></i>
+              </div>
+              <div class="body-forgot">
+                <a href="#" target="blank" class="body-forgot__pass link"
+                  >Forgot Password ?</a
+                >
+              </div>
+              <div class="body-login">
+                <input type="submit" value="Log In" />
+              </div>
+            </form>
+          </div>
         </div>
+        <!-- Swap Login :{ -->
+        <div class="foot">
+          <li foot>
+            Switch to <span class="foot-var">teacher's</span> account or
+            <a href="signUp/index.html" class="foot-signUp">sign up</a>.
+          </li>
+        </div>
+      </div>
     </div>
 
     <!-- HELP SECTION -->
     <a href="#">
-        <div class="help">
-            <i class="fas fa-question help-icon"></i>
-        </div>
+      <div class="help">
+        <i class="fas fa-question help-icon"></i>
+      </div>
     </a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
